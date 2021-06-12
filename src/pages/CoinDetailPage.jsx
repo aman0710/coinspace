@@ -4,6 +4,7 @@ import CoinData from '../components/CoinData'
 import HistoryChart from '../components/HistoryChart'
 import coinGecko from '../apis/coinGecko'
 
+
 const CoinDetailPage = () => {
 
     const { id } = useParams()
@@ -77,7 +78,7 @@ const CoinDetailPage = () => {
                 month: formatData(month.data.prices),
                 semiyear: formatData(semiyear.data.prices),
                 year: formatData(year.data.prices),
-                detail: detail.data[0]
+                detail: detail.data[0],
             })
 
 
@@ -86,7 +87,7 @@ const CoinDetailPage = () => {
 
         fetchData()
 
-    }, [])
+    }, [id]) // id dependency added. can be removed but if removed, warning pops up.
 
 
 

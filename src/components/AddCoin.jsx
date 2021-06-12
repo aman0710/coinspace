@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { WatchListContext } from '../context/watchListContext'
+import {v4 as uuidv4} from 'uuid'
 
 const AddCoin = () => {
 
@@ -52,7 +53,7 @@ const AddCoin = () => {
                 : "dropdown-menu scrollable-menu"}>
                 {availableCoins.map(el => {
                     return (
-                        <a onClick={() => handleClick(el.toLowerCase())} href="#" className="dropdown-item">{el}</a>
+                        <a onClick={() => handleClick(el.toLowerCase())} href="/" className="dropdown-item" key={uuidv4()} >{el}</a>
                     )
                 })}
             </div>

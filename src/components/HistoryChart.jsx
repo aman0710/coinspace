@@ -46,10 +46,11 @@ const HistoryChart = ({ data }) => {
                     options: { ...historyOptions }
                 }
             )
-
+            
+            console.log(chartInstance)
 
         }
-    })
+    },)
 
 
 
