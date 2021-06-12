@@ -2,7 +2,7 @@
 CoinSpace website shows you the list of trending cryptocurrencies. You can add/delete any currency. If you click on a particular cryptocurrency, you will be shown the detailed information about that currency like charts, total supply, market capitalization, volume, etc. It was created using React.js as the framework and Chart.js as the charting library and also uses the API of Coingecko website.
 
 # Project Link : 
-https://coinspace0710.herokuapp.com/
+https://coinspace.vercel.app/
 
 # Getting Started with Create React App
 
